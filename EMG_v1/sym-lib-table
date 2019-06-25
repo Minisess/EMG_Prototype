@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Custom_library)(type Legacy)(uri ${KIPRJMOD}/Custom_library.lib)(options "")(descr ""))
+  (lib (name dk_Sockets-for-ICs-Transistors)(type Legacy)(uri ${KIPRJMOD}/dk_Sockets-for-ICs-Transistors.lib)(options "")(descr ""))
+)
