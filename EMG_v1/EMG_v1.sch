@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:EMG_v1-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -309,7 +310,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 2750 9150 2850
 Wire Wire Line
-	9150 3150 9150 3250
+	9150 3150 9150 3200
 Connection ~ 3950 2250
 $Comp
 L Amplifier_Operational:MCP6002-xP U2
@@ -446,18 +447,6 @@ Wire Wire Line
 Connection ~ 2600 1950
 Wire Wire Line
 	2600 1950 2600 900 
-Wire Wire Line
-	2250 1200 1850 1200
-Wire Wire Line
-	2250 1200 2250 1950
-Wire Wire Line
-	2100 1300 1850 1300
-Wire Wire Line
-	2100 1300 2100 2450
-Wire Wire Line
-	1850 1400 2000 1400
-Wire Wire Line
-	2000 1400 2000 2250
 Connection ~ 2000 2250
 $Comp
 L power:GND #PWR0108
@@ -542,23 +531,12 @@ Connection ~ 1350 1850
 Wire Wire Line
 	1350 2150 1350 2250
 Wire Wire Line
-	1350 2650 1350 2850
+	1350 2650 1350 2750
 Wire Wire Line
 	1350 2250 2000 2250
 Connection ~ 1350 2250
 Wire Wire Line
 	1350 2250 1350 2350
-$Comp
-L Connector:Conn_01x04_Male J1
-U 1 1 5D0A60A4
-P 1650 1300
-F 0 "J1" H 1758 1581 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 1758 1490 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type175_RT02704HBLC_1x04_P7.50mm_Horizontal" H 1650 1300 50  0001 C CNN
-F 3 "~" H 1650 1300 50  0001 C CNN
-	1    1650 1300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5D0A6D35
@@ -570,6 +548,88 @@ F 3 "" H 1850 1750 50  0001 C CNN
 	1    1850 1750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5D12AC0A
+P 10050 2850
+F 0 "J2" H 10158 3031 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 10158 2940 50  0000 C CNN
+F 2 "Digikey:Terminal_Block_D1.3mm_P5mm" H 10050 2850 50  0001 C CNN
+F 3 "~" H 10050 2850 50  0001 C CNN
+	1    10050 2850
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	1850 1500 1850 1750
+	9850 2750 9150 2750
+Connection ~ 9150 2750
+Wire Wire Line
+	9850 2850 9450 2850
+Wire Wire Line
+	9450 2850 9450 3200
+Wire Wire Line
+	9450 3200 9150 3200
+Connection ~ 9150 3200
+Wire Wire Line
+	9150 3200 9150 3250
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5D136757
+P 750 2200
+F 0 "J1" H 858 2381 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 858 2290 50  0000 C CNN
+F 2 "Digikey:Terminal_Block_D1.3mm_P5mm" H 750 2200 50  0001 C CNN
+F 3 "~" H 750 2200 50  0001 C CNN
+	1    750  2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  2200 950  1850
+Wire Wire Line
+	950  1850 1100 1850
+Connection ~ 1100 1850
+Wire Wire Line
+	950  2300 950  2750
+Wire Wire Line
+	950  2750 1350 2750
+Connection ~ 1350 2750
+Wire Wire Line
+	1350 2750 1350 2850
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5D14022A
+P 1550 1050
+F 0 "J3" H 1658 1231 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1658 1140 50  0000 C CNN
+F 2 "Digikey:Terminal_Block_D1.3mm_P5mm" H 1550 1050 50  0001 C CNN
+F 3 "~" H 1550 1050 50  0001 C CNN
+	1    1550 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5D142BB1
+P 1550 1250
+F 0 "J4" H 1658 1431 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1658 1340 50  0000 C CNN
+F 2 "Digikey:Terminal_Block_D1.3mm_P5mm" H 1550 1250 50  0001 C CNN
+F 3 "~" H 1550 1250 50  0001 C CNN
+	1    1550 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1050 2250 1050
+Wire Wire Line
+	2250 1050 2250 1950
+Wire Wire Line
+	1750 1150 2100 1150
+Wire Wire Line
+	2100 1150 2100 2450
+Wire Wire Line
+	1750 1250 2000 1250
+Wire Wire Line
+	2000 1250 2000 2250
+Wire Wire Line
+	1750 1350 1850 1350
+Wire Wire Line
+	1850 1350 1850 1750
 $EndSCHEMATC
